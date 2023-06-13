@@ -1,0 +1,28 @@
+.date-col {
+    width: 20%;
+}
+
+.message-col {
+    width: 80%;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+    cursor: pointer !important;
+}
+
+a:hover {
+    color: orangered;
+    cursor: pointer !important;
+}
+
+p.message {
+    color: blue;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 500px;
+    cursor: pointer !important;
+    
+  }

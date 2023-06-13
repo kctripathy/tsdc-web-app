@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import 'ag-grid-community/styles/ag-grid.css';
+@import 'ag-grid-community/styles/ag-theme-alpine.css';
+
+html, body { height: 100%; }
+/* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+
+
+body {
+    padding-top: 0;
+    padding-bottom: 3rem;
+    color: rgb(var(--bs-tertiary-color-rgb));
+    font-family: Roboto;
+  }
+
+  .page-header {
+    border-bottom: solid 1px #ccc;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+
+.text-small-grey {
+  font-size: small;
+  color: #818181;
+}
+
+.center-div {
+  margin: 50px auto;
+}
+
+.page-image {
+  width: 100%;
+  margin: 10px 0px;
+  border: solid 1px #808080;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.page-image-embed {
+  float: right;
+  width: 400px;
+  margin: 10px 0px;
+  border: solid 1px #808080;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.divider-line {
+  background-image: linear-gradient(133deg, rgb(217 211 211) 60%, rgb(255, 255, 252));
+  height: 1px;
+}
+
+.required-field {
+    color: red;
+    display: block;
+    float: right;
+}

@@ -1,0 +1,24 @@
+<div class="container-fluid m-0 p-4">
+    <div class="row">
+        <div class="col-12 page-header">
+            <h4>{{aboutWhat?.replaceAll('-', ' ') | uppercase}}</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12" *ngIf="aboutWhat == 'calendar'">
+            <app-calendar></app-calendar> 
+        </div>
+        <div class="col-12" *ngIf="aboutWhat == 'departments'">
+            <app-departments></app-departments> 
+        </div>
+        <div class="col-12" *ngIf="aboutWhat == 'publications'">
+            <app-publications></app-publications> 
+        </div>
+        <div class="col-12" *ngIf="aboutWhat == 'subjects'">
+            <app-subjects></app-subjects> 
+        </div>
+        <div class="col-12" *ngIf="aboutWhat == 'syllabus'">
+            <app-syllabus></app-syllabus> 
+        </div>
+    </div>
+</div>

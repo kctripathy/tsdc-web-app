@@ -1,0 +1,8 @@
+.dept {
+    border: solid 1px #ccc !important;
+}
+
+.dept:hover {
+    border: solid 1px #aaa !important;
+    box-shadow: 5px 10px 18px #888888;
+}

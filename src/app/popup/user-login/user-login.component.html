@@ -1,0 +1,38 @@
+<div class="popup-container-login">
+    <app-header-popup title="{{data.title}}" (clickClosed) = "closeDialog()"></app-header-popup>
+    <form [formGroup]="loginForm" class="form-container-login mt-2">
+        <div class="row m-0 p-2">
+            <div class="col-3">
+                User Name:
+                <span class="required-field">*</span>
+            </div>
+            <div class="col-9">
+                <input type="text" class="w-100" placeholder="Enter login name" formControlName="userName" />
+            </div>
+        </div>
+        <div class="row m-0 p-2">
+            <div class="col-3">Password:
+                <span class="required-field">*</span>
+            </div>
+            <div class="col-9">
+                <input type="password" class="w-100" placeholder="Enter password" formControlName="password" />
+            </div>
+        </div>
+        
+    </form>
+    <div class="popup-footer-login">
+        <button (click)="closeDialog()" class="btn btn-outline-primary" style="margin-right: 10px;">Cancel</button>
+        <button (click)="loginUser()" 
+                [disabled]="isFormInvalid()"
+                class="btn btn-primary">
+                Login
+        </button>
+    </div>
+    <div class="row m-0 p-0">
+        <div class="col-12">
+            <span class="error-message">{{errorMessage}}</span>
+        </div>
+    </div>
+</div>
+
+

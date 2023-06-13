@@ -1,0 +1,179 @@
+<header data-bs-theme="dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img src="assets/tsdc-logo-small.jpg" style="border: 0; margin: 0px;" />
+        <!-- <img src="./assets/image1.jpeg" style="height: auto; width: 100%; margin-top: -110px;" /> -->
+        TSD College
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" [routerLink]="['/about','college-crest']">College Crest</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/about','vision-&-mission']">Vision & Mission</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/about','college-history']">College History</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" [routerLink]="['/about','principal-message']">Principal's Message</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Academics
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" [routerLink]="['/academic','subjects']">Subjects</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/academic','syllabus']">Syllabus</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/academic','publications']">Publications</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/academic','departments']">Departments</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <!-- <li><a class="dropdown-item" [routerLink]="['/academic','holidays']">Holiday List</a></li> -->
+              <li><a class="dropdown-item" [routerLink]="['/academic','calendar']">Academic Calendar</a></li>
+            </ul>
+          </li>
+
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Students
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" [routerLink]="['/students','association']">Associations</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/students','submit-feedback']">Submit Feedback</a></li>
+            </ul>
+          </li> -->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Staffs
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" [routerLink]="['/staffs','teaching']">Teaching Staffs</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/staffs','non-teaching']">Non-Teaching Staffs</a></li>
+            </ul>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cells
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" [routerLink]="['/cells','career-development']">Career Development</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/cells','grievance-redressal']">Grievance Redressal</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" [routerLink]="['/cells','UGC']">UGC (University Grants Commission)</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/cells','YRC']">YRC (Youth Red Cross)</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/cells','NSS']">NSS (National Service Scheme)</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/cells','NCC']">NCC (National Cadet Corps)</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" [routerLink]="['/cells','pshc']">Prevention of Sexual Harassment</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              IQAC / NAAC
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" [routerLink]="['/admin','naac']">NAAC</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/admin','iqac']">IQAC</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/admin','aqar']">AQAR</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/admin','ohepee']">OHEPEE</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" [routerLink]="['/admin','governing-body']">Goervning Body</a></li>
+              <!-- <li><a class="dropdown-item" [routerLink]="['/admin','mom']">Minutes of Meeting</a></li> -->
+            </ul>
+          </li>
+
+          
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Library
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" [routerLink]="['/library','rules']">Library Rules</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/library','books']">Library Books</a></li>
+            </ul>
+          </li>
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Gallery
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" [routerLink]="['/gallery','photo-gallery']">Photo Gallery</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/gallery','links-gallery']">Links Gallery</a></li>
+            </ul>
+          </li>
+          
+
+          <li class="nav-item">
+            <a class="nav-link" href="rti" tabindex="-1" aria-disabled="true">RTI</a>
+          </li>
+
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="naac" tabindex="-1" aria-disabled="true">NAAC</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="aqar" tabindex="-1" aria-disabled="true">AQAR</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="iqac" tabindex="-1" aria-disabled="true">IQAC</a>
+          </li> -->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Alumni
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" [routerLink]="['/alumni','registration']">Registration</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/alumni','association']">Association</a></li>
+            </ul>
+          </li>
+           
+          <!-- <li class="nav-item d-right">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li> -->
+          
+        </ul>
+        <div *ngIf="!isLoggedOn" style="display: none;">
+          <button class="btn btn-outline-primary" (click)="openLoginPopup()">Login</button>
+        </div>
+        <div *ngIf="isLoggedOn">
+          <!-- <a href="http://localhost:8666/web1/profile/mainpage/logout.php" id="logout" >Logout</a> -->
+          <ul style="padding: 0; margin-right: 50px;">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Welcome Administrator
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" [routerLink]="['/administration','upload']">Upload</a></li>
+                <li><a class="dropdown-item" [routerLink]="['/administration','establishment']">Establishments</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" [routerLink]="['/logout']">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </nav>
+</header>

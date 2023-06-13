@@ -1,0 +1,19 @@
+<div class="popup-container">
+    <app-header-popup title="{{data.employee.Salutation}} {{data.employee.EmployeeName}}" (clickClosed) = "closeDialog()"></app-header-popup>
+    <form class="form-container">
+        <div class="row m-0 p-2">
+            <div class="col-12">
+                Designation: {{data.employee.DesignationDescription}}
+            </div>
+            <div class="col-12">
+                Department: {{data.employee.DepartmentDescription}}
+            </div>
+            <div class="col-12">
+                Joining Date In Office: {{data.employee.JoiningDateInOffice}}
+            </div>
+        </div>
+    </form>
+    <div class="popup-footer">
+        <button (click)="closeDialog()" class="btn btn-primary">Close</button>
+    </div>
+</div>

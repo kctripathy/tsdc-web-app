@@ -1,0 +1,12 @@
+.book-table {
+    margin-top: 10px;
+    width: 100%;
+    height: 480px;
+}
+
+.ag-header-cell-label {
+    /* Necessary to allow for text to grow vertically */
+    height: 100%;
+    padding: 0 !important;
+    color: red;
+}

@@ -1,0 +1,27 @@
+<div class="container-fluid m-0 p-4">
+    <div class="row">
+        <div class="col-12 page-header" *ngIf="aboutWhat !== 'principal-message'">
+            <h4>{{aboutWhat?.replaceAll('-', ' ') | uppercase}}</h4>
+        </div>
+        <div class="col-12 page-header" *ngIf="aboutWhat === 'principal-message'">
+            <h4>Principal's Message: </h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12" *ngIf="aboutWhat == 'college-crest'">
+            <app-crest></app-crest>
+        </div>
+        <div class="col-12" *ngIf="aboutWhat == 'college-history'">
+            <app-history></app-history>
+        </div>
+        <div class="col-12" *ngIf="aboutWhat?.includes('vision')">
+            <app-vision-mission></app-vision-mission>
+        </div>
+        <div class="col-12" *ngIf="aboutWhat == 'principal-message'">
+            <app-principal-message></app-principal-message>
+        </div>
+        
+    </div>
+    
+    
+</div>

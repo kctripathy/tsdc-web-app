@@ -1,0 +1,23 @@
+::ng-deep .cdk-overlay-container {
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+
+
+.popup-footer-login {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.form-container-login {
+    margin-left: 5px;
+}
+
+.error-message {
+    color: red;
+    font-size: medium;
+    text-align: center;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}

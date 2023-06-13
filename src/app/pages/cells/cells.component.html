@@ -1,0 +1,30 @@
+<div class="container-fluid m-0 p-4">
+    <div class="row">
+        <div class="col-12 page-header">
+            <h4>{{aboutWhat?.replaceAll('-', ' ') | uppercase}} {{fullForm}}</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12" *ngIf="aboutWhat == 'career-development'">
+            <app-career-development></app-career-development> 
+        </div>
+        <div class="col-12" *ngIf="aboutWhat == 'grievance-redressal'">
+            <app-grievance-redressal />
+        </div>
+        <div class="col-12" *ngIf="aboutWhat == 'UGC'">
+            <app-ugc /> 
+        </div>
+        <div class="col-12" *ngIf="aboutWhat == 'YRC'">
+            <app-yrc />
+        </div>
+        <div class="col-12" *ngIf="aboutWhat == 'NSS'">
+            <app-nss></app-nss>
+        </div>
+        <div class="col-12" *ngIf="aboutWhat == 'NCC'">
+            <app-ncc />
+        </div>
+        <div class="col-12" *ngIf="aboutWhat == 'pshc'">
+            <app-pshc />
+        </div>
+    </div>
+</div>

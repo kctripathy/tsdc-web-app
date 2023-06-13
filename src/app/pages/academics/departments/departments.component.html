@@ -1,0 +1,18 @@
+<div *ngIf="isLoading"
+     class="spinner-border text-primary" 
+      style="width: 3rem; height: 3rem; margin: 100px auto; display: block;" 
+      role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div *ngIf="!isLoading">
+    <div class="card-deck">
+        <div class="card border-primary mb-3 dept" style="width: 18rem; max-width: 18rem; display: block; float: left; margin: 1rem;" *ngFor="let dept of departments">
+            <div class="card-header">{{dept.DepartmentName}}</div>
+            <div class="card-body text-primary">
+                <p class="card-text">.</p>
+            </div>
+        </div>
+      </div>
+    <!-- <pre>{{departments | json}}</pre> -->
+</div>

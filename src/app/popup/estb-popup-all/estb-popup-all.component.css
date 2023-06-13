@@ -1,0 +1,22 @@
+
+::ng-deep .cdk-overlay-container {
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+
+.col-date {
+    padding-left: 10px;
+    width: 13%;
+}
+.col-title {
+    color: blue;
+    cursor: pointer;
+}
+
+.col-download > a:hover,
+.col-title:hover {
+    color: orangered;
+}
+
+.col-download > a {
+    text-decoration: none;
+}

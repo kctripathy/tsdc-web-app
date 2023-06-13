@@ -1,0 +1,39 @@
+<div class="container-fluid m-0 p-4">
+    <div class="row">
+        <div class="col-12 page-header">
+            <h4>{{aboutWhat?.replaceAll('-', ' ') | uppercase}} STAFFS</h4>
+        </div>
+    </div>
+    <table class="table table-hover" *ngIf="!isLoading">
+        <thead>
+            <th>Name</th>
+            <th>Designation</th>
+            <th>Department</th>
+            <th>Email</th>
+            <!-- <th>Phone</th> -->
+            <th>&nbsp;</th>
+        </thead>
+        <tbody class="m-0 p-0">
+            <tr class="m-0 p-0" *ngFor="let staff of staffs">
+                <td><a (click) = "viewDetails(staff)">{{staff.EmployeeName}}</a></td>
+                <td>{{staff.DesignationDescription}}</td>
+                <td>{{staff.DepartmentDescription}}</td>
+                <td>{{staff.EmailID}}</td>
+                <!-- <td>{{staff.Mobile}}</td> -->
+                <td style="display: none;">
+                    <button class="btn-primary btn-sm" (click)="viewDetails(staff)">View Details</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div *ngIf="isLoading">
+    <div class="spinner-border text-primary" 
+        style="width: 3rem; height: 3rem; margin: 150px auto; display: block;" 
+        role="status">
+    </div>
+    <div class="spinner spinner-lg text-info"
+    style="width: 3rem; height: 3rem; margin: -150px auto; display: block;"
+    >loading...</div>
+</div>

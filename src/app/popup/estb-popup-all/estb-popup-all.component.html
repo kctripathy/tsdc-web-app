@@ -1,0 +1,25 @@
+<div class="popup-container">
+    <app-header-popup title="{{data.estbTypeDescription}}" (clickClosed) = "closeDialog()"></app-header-popup>
+    <table class="table table-striped table-hover m-0 p-0">
+        <thead>
+            <th class="col-date">Date</th>
+            <th>Title</th>
+            <th>Download</th>
+        </thead>
+        <tbody>
+            <tr  *ngFor="let estb of data.record">
+                <td class="col-date">{{estb.EstbDate | date}}</td>
+                <td class="col-title" (click) = "showPopup(estb)">{{estb.EstbTitle}}</td>
+                <td class="col-download">
+                    <a href="{{downloadPath}}{{estb.FileNameWithPath}}" target="_blank">
+                        Download
+                    </a> 
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="popup-footer">
+        <button (click)="closeDialog()" class="btn btn-outline-primary">Close</button>
+    </div>
+</div>
+

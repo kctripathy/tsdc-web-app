@@ -1,0 +1,17 @@
+
+<table class="table table-hover">
+    <tbody class="m-0 p-0">
+        <tr class="m-0 p-0" *ngFor="let estb of displayTable.slice(0, 5)">
+            <td class="date-col">{{estb.EstbDate | date:'mediumDate'}}</td>
+            <td class="message-col">
+                <a  (click)="showDetails(estb)">
+                   <p class='message'>{{estb.EstbTitle}}</p> 
+                </a>
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+<div class="d-grid" *ngIf="displayTable && displayTable.length > 0">
+    <button (click)="showAll(estbType)" type="button" class="btn btn-primary btn-sm">Show all {{getEstbTypeDesc(estbType)}}</button>
+</div>

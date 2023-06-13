@@ -1,0 +1,25 @@
+
+.confirmation-dialog {
+    background-color: yellow;
+    border: solid 1px red;
+}
+
+
+.popup-container {
+    display: flex;
+    flex-flow: column;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2px;
+    min-height: 270px;
+}
+
+.popup-footer {
+    display: flex;
+    gap: 12px;
+    margin: 20px auto;
+    align-items: flex-end;
+}

@@ -1,0 +1,21 @@
+
+<div *ngIf="!isLoading">
+    <ag-grid-angular
+        class="ag-theme-alpine book-table"
+        [defaultColDef]="defaultColDef"
+        [rowData]="libraryBooks"
+        [columnDefs]="columnDefs">
+    </ag-grid-angular>
+</div>
+
+<div *ngIf="isLoading">
+    <div class="spinner-border text-primary" 
+        style="width: 3rem; height: 3rem; margin: 150px auto; display: block;" 
+        role="status">
+    </div>
+    <div class="spinner spinner-lg text-info"
+    style="width: 3rem; height: 3rem; margin: -150px auto; display: block;"
+    >loading...</div>
+</div>
+
+<pre>{{libraryBooks | json}}</pre>

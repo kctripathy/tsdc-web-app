@@ -1,0 +1,93 @@
+
+<div class="row row-cols-3 g-3 mt-2" *ngIf="!isLoading">
+    <div class="col" *ngFor="let photo of photos">
+      <div class="card icas-box" (click)="loadPhotoPopup(photo)">
+        <!-- <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top" -->
+        <img src="{{downloadPath}}{{photo.FileNameWithPath}}" 
+                class="card-img-top img-fluid img-responsive icas-image"
+                alt="{{photo.EstbTitle}}" />
+        <div class="card-body">
+          <h5 class="card-title d-none">Card title</h5>
+          <p class="card-text">
+            {{photo.EstbTitle}}
+          </p>
+        </div>
+      </div>
+    </div>
+<!-- 
+    <div class="col">
+      <div class="card">
+        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top"
+          alt="Palm Springs Road" />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a longer card with supporting text below as a natural lead-in to
+            additional content. This content is a little bit longer.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top"
+          alt="Los Angeles Skyscrapers" />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+            additional content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top"
+          alt="Skyscrapers" />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a longer card with supporting text below as a natural lead-in to
+            additional content.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/046.webp" class="card-img-top"
+          alt="Skyscrapers" />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a longer card with supporting text below as a natural lead-in to
+            additional content. This content is a little bit longer.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/050.webp" class="card-img-top"
+          alt="Skyscrapers" />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a longer card with supporting text below as a natural lead-in to
+            additional content. This content is a little bit longer.
+          </p>
+        </div>
+      </div>
+    </div>
+     -->
+</div>
+
+<div *ngIf="isLoading">
+    <div class="spinner-border text-primary" 
+        style="width: 3rem; height: 3rem; margin: 150px auto; display: block;" 
+        role="status">
+    </div>
+    <div class="spinner spinner-lg text-info"
+    style="width: 3rem; height: 3rem; margin: -150px auto; display: block;">Loading...</div>
+</div>
+
+<!-- <pre>{{photos | json }}</pre> -->
